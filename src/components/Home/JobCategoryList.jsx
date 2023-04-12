@@ -42,7 +42,7 @@ const JobCategoryList = () => {
 
     return (
         <section className="py-6 ">
-            <div className="dark:bg-gray-800 dark:text-gray-100 container flex flex-col items-center justify-center p-4 mx-auto sm:p-10">
+            <div className="container flex flex-col items-center justify-center p-4 mx-auto sm:p-10">
                 <p className="p-2  text-center uppercase text-4xl font-bold leading-none text-center sm:text-5xl">Job Category List</p>
                 <h1 className="text-sm font-medium tracking-wider">Explore thousands of job opportunities with all the information you need. Its your future</h1>
                 <div className='grid sm:grid-cols-1 lg:grid-cols-4 mt-5'>
@@ -51,7 +51,7 @@ const JobCategoryList = () => {
                     }
                 </div>
             </div>
-            
+
         </section>
 
     );

@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "company_logo": "https://example.com/company-logo-1.png",
+        "company_logo": "https://img.freepik.com/free-vector/abstract-line-logo-element-red-gradient-design-vector_53876-154278.jpg?w=740&t=st=1681299646~exp=1681300246~hmac=1c6dd75d0f60e551a66e19bc1b412d926778963d81c2996366a5b4f64469ee36",
         "job_title": "Software Engineer",
         "company_name": "Acme Corporation",
         "remote_or_onsite": "Remote",
@@ -19,7 +19,7 @@
     },
     {
         "id": 2,
-        "company_logo": "https://example.com/company-logo-2.png",
+        "company_logo": "https://img.freepik.com/premium-vector/retro-uppercase-letters-with-herbal-autumn-seasonal-ornament-fiery-font-with-floral-pattern-w-x-y-z_570429-43254.jpg?w=740",
         "job_title": "Product Manager",
         "company_name": "XYZ Inc.",
         "remote_or_onsite": "Onsite",
@@ -37,7 +37,7 @@
     },
     {
         "id": 3,
-        "company_logo": "https://example.com/company-logo-3.png",
+        "company_logo": "https://img.freepik.com/free-vector/kids-with-abc-letters_53876-40270.jpg?w=740&t=st=1681299771~exp=1681300371~hmac=4349c1ac092aed85b0729352ce51fbb7b52e44f4699f11c365a71f1ed49e6cee",
         "job_title": "Graphic Designer",
         "company_name": "ABC Creative",
         "remote_or_onsite": "Onsite",
@@ -55,7 +55,7 @@
     },
     {
         "id": 4,
-        "company_logo": "https://example.com/company-logo-4.png",
+        "company_logo": "https://img.freepik.com/premium-vector/cartoon-kids-with-123-numbers-children-with-numbers-isolated-white-background-vector-illustration_83111-3458.jpg?w=826",
         "job_title": "Marketing Manager",
         "company_name": "123 Enterprises",
         "remote_or_onsite": "Remote",
@@ -73,7 +73,7 @@
     },
     {
         "id": 5,
-        "company_logo": "https://example.com/logo.png",
+        "company_logo": "https://img.freepik.com/free-vector/flat-st-george-s-day-illustration-with-knight-dragon_23-2148885309.jpg?w=740&t=st=1681299944~exp=1681300544~hmac=611b8a1d040d148b3ffb27b451e21f258a8eea6c2304583018a2fc11565d4afb",
         "job_title": "Dragon Keeper",
         "company_name": "Romanian Dragon Sanctuary",
         "remote_or_onsite": "Onsite",
@@ -91,7 +91,7 @@
     },
     {
         "id": 6,
-        "company_logo": "https://example.com/logo.png",
+        "company_logo": "https://img.freepik.com/free-vector/font-design-word-magic-land-with-happy-magician-flowers_1308-42101.jpg?w=740&t=st=1681300064~exp=1681300664~hmac=5863e93f07c775d7f5808e58e45280b77b91de75a1a45c78cd599b8063cfb9e6",
         "job_title": "Magical Creature Expert",
         "company_name": "Magizoology Department, Ministry of Magic",
         "remote_or_onsite": "Onsite",
