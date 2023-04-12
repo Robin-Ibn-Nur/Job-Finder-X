@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "company_logo": "https://example.com/company-logo-1.png",
+        "job_title": "Software Engineer",
+        "company_name": "Acme Corporation",
+        "remote_or_onsite": "Remote",
+        "location": "San Francisco, CA",
+        "fulltime_or_parttime": "Full-time",
+        "salary": "$100,000 - $120,000",
+        "job_description": "We are looking for a software engineer to join our team...",
+        "job_responsibility": "Design and implement new software features...",
+        "educational_requirements": "Bachelor's degree in Computer Science or related field",
+        "experiences": "3+ years of software development experience",
+        "contact_information": {
+            "phone": "555-1234",
+            "email": "careers@acme.com"
+        }
+    },
+    {
+        "id": 2,
+        "company_logo": "https://example.com/company-logo-2.png",
+        "job_title": "Product Manager",
+        "company_name": "XYZ Inc.",
+        "remote_or_onsite": "Onsite",
+        "location": "New York, NY",
+        "fulltime_or_parttime": "Full-time",
+        "salary": "$120,000 - $150,000",
+        "job_description": "We are seeking a talented product manager to join our team...",
+        "job_responsibility": "Lead cross-functional teams to deliver high-quality products...",
+        "educational_requirements": "Bachelor's degree in business, engineering, or related field",
+        "experiences": "5+ years of product management experience",
+        "contact_information": {
+            "phone": "555-5678",
+            "email": "hr@xyzinc.com"
+        }
+    },
+    {
+        "id": 3,
+        "company_logo": "https://example.com/company-logo-3.png",
+        "job_title": "Graphic Designer",
+        "company_name": "ABC Creative",
+        "remote_or_onsite": "Onsite",
+        "location": "Los Angeles, CA",
+        "fulltime_or_parttime": "Part-time",
+        "salary": "$40,000 - $50,000",
+        "job_description": "We are looking for a talented graphic designer to join our team...",
+        "job_responsibility": "Create designs and graphics for a variety of projects...",
+        "educational_requirements": "Bachelor's degree in Graphic Design or related field",
+        "experiences": "1-2 years of graphic design experience",
+        "contact_information": {
+            "phone": "555-9012",
+            "email": "jobs@abccreative.com"
+        }
+    },
+    {
+        "id": 4,
+        "company_logo": "https://example.com/company-logo-4.png",
+        "job_title": "Marketing Manager",
+        "company_name": "123 Enterprises",
+        "remote_or_onsite": "Remote",
+        "location": "Miami, FL",
+        "fulltime_or_parttime": "Full-time",
+        "salary": "$90,000 - $110,000",
+        "job_description": "We are seeking a results-driven marketing manager to join our team...",
+        "job_responsibility": "Develop and implement marketing plans to drive growth...",
+        "educational_requirements": "Bachelor's degree in Marketing or related field",
+        "experiences": "3+ years of marketing experience",
+        "contact_information": {
+            "phone": "555-3456",
+            "email": "careers@acme.com"
+        }
+    },
+    {
+        "id": 5,
+        "company_logo": "https://example.com/logo.png",
+        "job_title": "Dragon Keeper",
+        "company_name": "Romanian Dragon Sanctuary",
+        "remote_or_onsite": "Onsite",
+        "location": "Romania",
+        "fulltime_or_parttime": "Fulltime",
+        "salary": "$20,000 - $30,000",
+        "job_description": "Take care of dragons and maintain their habitat.",
+        "job_responsibility": "Feed and care for dragons, monitor their health and behavior.",
+        "educational_requirements": "Completed Hogwarts Education or equivalent",
+        "experiences": "Prior experience working with dragons preferred.",
+        "contact_information": {
+            "phone": "+40 264 596 064",
+            "email": "dragonsanctuaryrecruitment@romaniandragsanctuary.com"
+        }
+    },
+    {
+        "id": 6,
+        "company_logo": "https://example.com/logo.png",
+        "job_title": "Magical Creature Expert",
+        "company_name": "Magizoology Department, Ministry of Magic",
+        "remote_or_onsite": "Onsite",
+        "location": "London, UK",
+        "fulltime_or_parttime": "Fulltime",
+        "salary": "$190,000 - $210,000",
+        "job_description": "Study and research magical creatures.",
+        "job_responsibility": "Conduct field research, analyze data, and publish findings.",
+        "educational_requirements": "Completed Hogwarts Education or equivalent, advanced degree in Magizoology or related field.",
+        "experiences": "Prior experience in Magizoology research required.",
+        "contact_information": {
+            "phone": "+44 20 7945 7000",
+            "email": "magizoologyrecruitment@ministryofmagic.gov.uk"
+        }
+    }
+]

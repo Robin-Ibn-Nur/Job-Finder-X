@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "logo": "https://img.freepik.com/free-vector/hacker-operating-laptop-cartoon-icon-illustration-technology-icon-concept-isolated-flat-cartoon-style_138676-2387.jpg?w=740&t=st=1681295330~exp=1681295930~hmac=cb55d61788a9fcea9628443ee7a5e5a414ae4e943687868513a3037ed0ade331",
+        "title": "Software Engineer",
+        "jobs_available": 100
+    },
+    {
+        "id": 2,
+        "logo": "https://img.freepik.com/free-vector/creative-data-logo-template_23-2149212795.jpg?w=740&t=st=1681295421~exp=1681296021~hmac=547faa07d70f08c9404335594b8cdf1950ec2c25a70602d75625ad8f7c9b9c0f",
+        "title": "Data Analyst",
+        "jobs_available": 50
+    },
+    {
+        "id": 3,
+        "logo": "https://img.freepik.com/free-vector/male-cashier-cartoon-icon-illustration-people-profession-icon-concept_138676-2123.jpg?w=740&t=st=1681295449~exp=1681296049~hmac=2a9b0bce365ffc153b49957ce4ad7460cf8d0f4d776b769ab6760c28a28c5f56",
+        "title": "Product Manager",
+        "jobs_available": 30
+    },
+    {
+        "id": 4,
+        "logo": "https://img.freepik.com/free-vector/illustration-web-design-template_53876-5283.jpg?w=826&t=st=1681295532~exp=1681296132~hmac=39c64f8705ba8cad322a2b9333af83f85b901d6cccddca3cd541be61fa95ac02",
+        "title": "UX Designer",
+        "jobs_available": 20
+    }
+]

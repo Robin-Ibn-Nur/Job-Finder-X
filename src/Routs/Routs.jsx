@@ -11,7 +11,7 @@ export const routs = createBrowserRouter([
     {
         path: "/",
         element: <Main />,
-
+        loader: fetch('/public/Jobs.json'),
         errorElement: <ErrorPage />,
         children: [
             {
