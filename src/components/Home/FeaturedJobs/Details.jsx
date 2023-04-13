@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import { toast } from 'react-hot-toast';
 import { useParams } from 'react-router-dom';
+import { addToDb } from '../../../utilities/fakeDb';
 
 const Details = () => {
     const { id } = useParams();
@@ -11,7 +13,6 @@ const Details = () => {
                 const response = await fetch('/public/jobs.json');
                 const data = await response.json();
                 const jobData = data.find((e) => e.id === parseInt(id))
-                console.log(jobData);
                 setJob(jobData);
             } catch (error) {
                 console.error(error);
@@ -22,6 +23,10 @@ const Details = () => {
 
     if (!job) {
         return <div className='text-2xl text-center'>Loading...</div>;
+    }
+    const handleApplyJob = (id) => {
+        addToDb(id)
+        toast.success('You Applied successfully')
     }
 
     return (
@@ -50,7 +55,7 @@ const Details = () => {
                             <p><span className='font-bold'>Email:</span>  {job.contact_information.email}</p>
                             <p><span className='font-bold'>Address:</span>  {job.location}</p>
                             <div className="card-actions justify-center mt-5">
-                                <button className="btn">Apply Now</button>
+                                <button onClick={() => handleApplyJob(id)} className="btn">Apply Now</button>
                             </div>
                         </div>
                     </div>
