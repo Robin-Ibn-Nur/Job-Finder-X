@@ -1,7 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Job = ({ d }) => {
-    const { company_logo,
+
+    const {
+        id,
+        company_logo,
         company_name,
         contact_information,
         educational_requirements,
@@ -18,7 +22,7 @@ const Job = ({ d }) => {
     // const { email, phone } = contact_information;
     return (
         <>
-            <a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900">
+            <div className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900">
                 <img role="presentation" className="object-cover w-full rounded h-44 dark:bg-gray-500" src={company_logo} />
                 <div className="p-6 space-y-2 w-max">
                     <h3 className="text-2xl font-semibold ">{job_title}</h3>
@@ -31,8 +35,10 @@ const Job = ({ d }) => {
                         <p>Salary: {salary}</p>
                     </div>
                 </div>
-                <button className="btn bg-[#7E90FE] my-5">View Details</button>
-            </a>
+                <Link to={`/details/${id}`} className="btn bg-[#7E90FE] my-5">View Details</Link>
+                {/* <Link to={`/jobDetails/${id}`}>view more</Link> */}
+
+            </div>
         </>
     );
 };

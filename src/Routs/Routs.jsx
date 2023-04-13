@@ -5,9 +5,11 @@ import Home from "../components/Home/Home";
 import Statistics from "../components/Statistics/Statistics";
 import AppliedJobs from "../components/appliedJobs/appliedJobs";
 import Blog from "../components/Blog/Blog";
+import Details from "../components/Home/FeaturedJobs/Details";
 
 export const routs = createBrowserRouter([
     /*routs*/
+
     {
         path: "/",
         element: <Main />,
@@ -32,9 +34,21 @@ export const routs = createBrowserRouter([
             {
                 path: "/blog",
                 element: <Blog />
-            }
+            },
+            {
+                path: "/details/:id",
+                element: <Details />,
+
+            },
+            // {
+            //     path: "/details/:detailsId",
+            //     loader: async ({ params }) => {
+            //         return fetch(`/public/jobs.json/${params.detailsId}`)
+            //     },
+            //     element: <Details />
+            // }
+
+
         ]
-
     }
-
 ])
