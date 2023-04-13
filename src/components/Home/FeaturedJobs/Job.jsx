@@ -7,11 +7,6 @@ const Job = ({ d }) => {
         id,
         company_logo,
         company_name,
-        contact_information,
-        educational_requirements,
-        experiences,
-        job_description,
-        job_responsibility,
         job_title,
         location,
         remote_or_onsite,
@@ -19,7 +14,6 @@ const Job = ({ d }) => {
         salary
 
     } = d;
-    // const { email, phone } = contact_information;
     return (
         <>
             <div className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900">

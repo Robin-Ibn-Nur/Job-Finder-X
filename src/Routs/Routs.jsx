@@ -3,9 +3,11 @@ import Main from "../components/Main/Main";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
 import Home from "../components/Home/Home";
 import Statistics from "../components/Statistics/Statistics";
-import AppliedJobs from "../components/appliedJobs/appliedJobs";
+
 import Blog from "../components/Blog/Blog";
 import Details from "../components/Home/FeaturedJobs/Details";
+import AppliedJobs from "../components/AppliedJobs/AppliedJobs";
+import appliedJobsLoader from "../loaders/appliedJobsLoader";
 
 export const routs = createBrowserRouter([
     /*routs*/
@@ -29,7 +31,8 @@ export const routs = createBrowserRouter([
             },
             {
                 path: "/appliedJobs",
-                element: <AppliedJobs />
+                element: <AppliedJobs />,
+                loader: appliedJobsLoader
             },
             {
                 path: "/blog",

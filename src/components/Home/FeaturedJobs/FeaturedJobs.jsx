@@ -39,7 +39,6 @@ const FeaturedJobs = () => {
                             <button onClick={handleShowAll} type="button" className="px-6 py-3 text-sm rounded-md hover:underline dark:bg-gray-900 dark:text-gray-400">Load more posts...</button>
                         )
                     }
-                    {/* <button type="button" className="px-6 py-3 text-sm rounded-md hover:underline dark:bg-gray-900 dark:text-gray-400">Load more posts...</button> */}
                 </div>
             </div>
         </section>

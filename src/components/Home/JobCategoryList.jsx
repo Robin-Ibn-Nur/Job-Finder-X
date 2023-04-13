@@ -4,33 +4,6 @@ import Category from './Category';
 
 
 const JobCategoryList = () => {
-    // const data = [
-    //     {
-    //         "job_title": "Financial Analyst",
-    //         "jobs_available": 50,
-    //         "salary_range": "$60,000 - $80,000",
-    //         "experience_level": "Entry-level"
-    //     },
-    //     {
-    //         "job_title": "Investment Banker",
-    //         "jobs_available": 20,
-    //         "salary_range": "$100,000 - $150,000",
-    //         "experience_level": "Senior"
-    //     },
-    //     {
-    //         "job_title": "Accountant",
-    //         "jobs_available": 30,
-    //         "salary_range": "$50,000 - $70,000",
-    //         "experience_level": "Entry-level"
-    //     },
-    //     {
-    //         "job_title": "Financial Advisor",
-    //         "jobs_available": 15,
-    //         "salary_range": "$80,000 - $100,000",
-    //         "experience_level": "Mid-level"
-    //     }
-    // ]
-
     const [data, setData] = useState([]);
 
     useEffect(() => {
