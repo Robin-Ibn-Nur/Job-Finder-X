@@ -1,45 +1,61 @@
 import React, { useEffect, useState } from 'react';
-import { useLoaderData, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 const Details = () => {
     const { id } = useParams();
-    const [detailsData, setDetailsData] = useState({});
-
-    console.log(detailsData, id);
-
-    async function fetchData() {
-        try {
-            const response = await fetch('/public/jobs.json');
-            const data = await response.json();
-            const jobs = data.find(job => job.id === id);
-            console.log(data);
-            console.log(jobs);
-            setDetailsData(jobs || {});
-        } catch (error) {
-            console.error(error);
-            setDetailsData({ error: 'Could not fetch job details' });
-        }
-    }
+    const [job, setJob] = useState(null);
 
     useEffect(() => {
-        fetchData();
+        async function fetchJob() {
+            try {
+                const response = await fetch('/public/jobs.json');
+                const data = await response.json();
+                const jobData = data.find((e) => e.id === parseInt(id))
+                console.log(jobData);
+                setJob(jobData);
+            } catch (error) {
+                console.error(error);
+            }
+        }
+        fetchJob();
     }, [id]);
 
-
-
+    if (!job) {
+        return <div className='text-2xl text-center'>Loading...</div>;
+    }
 
     return (
         <div>
-            <h1>Details Page</h1>
-            {detailsData ? (
-                <div>
-                    <p>Company Name: {detailsData.company_name}</p>
-                    <p>Location: {detailsData.location}</p>
-                    <p>Error: {detailsData.error}</p>
+            <h1 className='text-center font-semibold text-4xl my-10'>Details Page</h1>
+            {job &&
+                <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-4 place-items-center my-5">
+                    <div className='grid gap-5'>
+                        <p><span className='font-bold'>Job Description:</span> {job.job_description}</p>
+                        <p><span className='font-bold'>Job Responsibility: </span>{job.job_responsibility}</p>
+                        <p> <span className='font-bold'>Educational Requirements:</span></p>
+                        <p>{job.educational_requirements}</p>
+                        <p> <span className='font-bold'>Experiences:</span></p>
+                        <p>{job.experiences}</p>
+                    </div>
+                    <div className="card w-96 bg-primary text-primary-content bg-indigo-400">
+                        <div className="card-body text-black">
+                            <h2 className="card-title font-bold">Job Details</h2>
+                            <p><span className='font-bold'>Salary:</span>
+                                {job.salary}</p>
+                            <p><span className='font-bold'>Job Title</span>
+                                {job.job_title}</p>
+                            <p className='font-bold card-title my-2'>Contact Information</p>
+                            <hr />
+                            <p><span className='font-bold'>Phone:</span>  {job.contact_information.phone}</p>
+                            <p><span className='font-bold'>Email:</span>  {job.contact_information.email}</p>
+                            <p><span className='font-bold'>Address:</span>  {job.location}</p>
+                            <div className="card-actions justify-center mt-5">
+                                <button className="btn">Apply Now</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            ) : (
-                <p>Loading...</p>
-            )}
+            }
         </div>
     );
 };

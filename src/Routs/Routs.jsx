@@ -37,16 +37,8 @@ export const routs = createBrowserRouter([
             },
             {
                 path: "/details/:id",
-                element: <Details />,
-
-            },
-            // {
-            //     path: "/details/:detailsId",
-            //     loader: async ({ params }) => {
-            //         return fetch(`/public/jobs.json/${params.detailsId}`)
-            //     },
-            //     element: <Details />
-            // }
+                element: <Details />
+            }
 
 
         ]

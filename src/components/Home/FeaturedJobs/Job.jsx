@@ -36,8 +36,6 @@ const Job = ({ d }) => {
                     </div>
                 </div>
                 <Link to={`/details/${id}`} className="btn bg-[#7E90FE] my-5">View Details</Link>
-                {/* <Link to={`/jobDetails/${id}`}>view more</Link> */}
-
             </div>
         </>
     );

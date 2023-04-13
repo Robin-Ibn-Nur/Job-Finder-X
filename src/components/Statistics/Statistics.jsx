@@ -17,7 +17,7 @@ const data = [
 const Statistics = () => {
     return (
         <div className='text-center'>
-            <h2 className='text-2xl my-5'>Statistics</h2>
+            <h1 className='text-center font-semibold text-4xl my-10'>Details Page</h1>
             <h3 className='text-3xl font-bold my-5'>Avarage Marks: 58.75</h3>
             <div style={{ width: '100%', height: 300 }}>
                 <ResponsiveContainer>
