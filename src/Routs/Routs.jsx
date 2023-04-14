@@ -21,7 +21,7 @@ export const routs = createBrowserRouter([
             {
                 path: "/",
                 element: <Home />,
-                loader: () => fetch('/public/Jobs.json'),
+                loader: () => fetch('/jobs.json'),
 
             },
             {
@@ -30,7 +30,7 @@ export const routs = createBrowserRouter([
 
             },
             {
-                path: "/appliedJobs",
+                path: "/appliedjobs",
                 element: <AppliedJobs />,
                 loader: appliedJobsLoader
             },

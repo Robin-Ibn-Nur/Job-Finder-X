@@ -7,7 +7,8 @@ const JobCategoryList = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        const url = '/public/cards.json'
+        const url = '/cards.json'
+
         fetch(url)
             .then(res => res.json())
             .then(data => setData(data))

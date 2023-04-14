@@ -10,7 +10,7 @@ const Details = () => {
     useEffect(() => {
         async function fetchJob() {
             try {
-                const response = await fetch('/public/jobs.json');
+                const response = await fetch('/jobs.json');
                 const data = await response.json();
                 const jobData = data.find((e) => e.id === parseInt(id))
                 setJob(jobData);
