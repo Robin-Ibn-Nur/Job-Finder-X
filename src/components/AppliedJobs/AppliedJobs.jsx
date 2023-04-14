@@ -5,13 +5,11 @@ import FilteredJobs from './FilteredJobs';
 
 const AppliedJobs = () => {
     const data = useLoaderData();
-    console.log(data);
-
     const [isRemote, setIsRemote] = useState(false);
     const [isOnsite, setIsOnsite] = useState(false);
 
     const jobs = isRemote || isOnsite
-        ? data.filter((job) => job.remote_or_onsite === (isRemote ? 'Remote' : 'Onsite'))
+        ? data?.filter((job) => job.remote_or_onsite === (isRemote ? 'Remote' : 'Onsite'))
         : data;
 
     return (

@@ -1,0 +1,8 @@
+.active {
+    /* Created with https://www.css-gradient.com */
+        background: #4B77B5;
+        background: -webkit-linear-gradient(top left, #4B77B5, #B2D7F4);
+        background: -moz-linear-gradient(top left, #4B77B5, #B2D7F4);
+        background: linear-gradient(to bottom right, #4B77B5, #B2D7F4);
+        color: white;
+}

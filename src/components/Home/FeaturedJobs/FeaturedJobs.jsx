@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData} from 'react-router-dom';
 import Job from './Job';
+import Loader from '../../../Loader/Loader';
 const FeaturedJobs = () => {
     const jobs = useLoaderData();
-
     const [displayData, setDisplayData] = useState([]);
     const [showAll, setShowAll] = useState(false);
 
@@ -14,6 +14,9 @@ const FeaturedJobs = () => {
 
     const handleShowAll = () => {
         setShowAll(true);
+        if (setShowAll) {
+            return <Loader />
+        }
     };
 
     return (

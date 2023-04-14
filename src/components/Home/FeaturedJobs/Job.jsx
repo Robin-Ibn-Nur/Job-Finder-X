@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Job = ({ d }) => {
-
     const {
         id,
         company_logo,
@@ -14,6 +13,7 @@ const Job = ({ d }) => {
         salary
 
     } = d;
+
     return (
         <>
             <div className="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900">
