@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { ResponsiveContainer, PieChart, Pie, Legend } from 'recharts';
+import { ResponsiveContainer, PieChart, Pie, Legend, Tooltip } from 'recharts';
 
 const data = [
     { name: 'Assignment 1', value: 60 },
@@ -23,6 +23,7 @@ const Statistics = () => {
                 <ResponsiveContainer>
                     <PieChart>
                         <Pie dataKey="value" data={data} fill="#8884d8" label />
+                        <Tooltip cursor={{ strokeDasharray: '3 3' }} />
                     </PieChart>
                 </ResponsiveContainer>
             </div>

@@ -1,41 +1,49 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import "./AppliedJobs.css"
+import FilteredJobs from './FilteredJobs';
 
 const AppliedJobs = () => {
-    const jobs = useLoaderData();
-    console.log(jobs);
-    const { company_logo, job_title, company_name } = jobs;
-    return (
-        <>
-            <h1 className='text-center font-semibold text-4xl my-10'>Details Page</h1>
-            <div>
-                <div class="share black">
-                    <a href="#">Share</a>
-                    <div>
-                        <ul>
-                            <li><a href="#">google+</a></li>
-                            <li><a href="#">facebook</a></li>
-                            <li><a href="#">twitter</a></li>
-                        </ul>
-                    </div>
-                </div>
-                {
-                    jobs?.map(job => <div key={job?.id} className="hero min-h-screen bg-base-200">
-                        <div className="hero-content flex-col lg:flex-row">
-                            <img src={job?.company_logo} className="max-w-sm rounded-lg shadow-2xl" />
-                            <div>
-                                <h1 className="text-5xl font-bold">{job?.job_title}</h1>
-                                <p className="py-6">{job?.company_name}</p>
-                                <button className="btn btn-primary">Get Started</button>
-                            </div>
-                        </div>
-                    </div>)
-                }
-            </div>
+    const data = useLoaderData();
+    console.log(data);
 
-        </>
+    const [isRemote, setIsRemote] = useState(false);
+    const [isOnsite, setIsOnsite] = useState(false);
+
+    const jobs = isRemote || isOnsite
+        ? data.filter((job) => job.remote_or_onsite === (isRemote ? 'Remote' : 'Onsite'))
+        : data;
+
+    return (
+        <div>
+            <h1 className='text-center font-semibold text-4xl my-10'>Details Page</h1>
+            <div className='text-center font-bold'>
+                <label className='mr-5'>
+                    <input
+                        type="checkbox"
+                        checked={isRemote}
+                        onChange={(e) => setIsRemote(e.target.checked)}
+                    />
+                    Remote Only
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        checked={isOnsite}
+                        onChange={(e) => setIsOnsite(e.target.checked)}
+                    />
+                    Onsite Only
+                </label>
+            </div>
+            {
+                jobs?.map(job => <FilteredJobs
+                    key={job?.id}
+                    job={job}
+                ></FilteredJobs>)
+            }
+        </div>
     );
+
 };
 
 export default AppliedJobs;

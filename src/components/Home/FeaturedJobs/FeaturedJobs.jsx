@@ -26,7 +26,7 @@ const FeaturedJobs = () => {
                 <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
 
                     {
-                        displayData.map(d => <Job
+                        displayData?.map(d => <Job
                             key={d.id}
                             d={d}
                         ></Job>)

@@ -20,7 +20,7 @@ const JobCategoryList = () => {
                 <h1 className="text-sm font-medium tracking-wider">Explore thousands of job opportunities with all the information you need. Its your future</h1>
                 <div className='grid sm:grid-cols-1 lg:grid-cols-4 mt-5'>
                     {
-                        data.map(card => <Category key={card.id} card={card} />)
+                        data?.map(card => <Category key={card.id} card={card} />)
                     }
                 </div>
             </div>

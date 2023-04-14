@@ -45,6 +45,7 @@ const Details = () => {
                     <div className="card w-96 bg-primary text-primary-content bg-indigo-400">
                         <div className="card-body text-black">
                             <h2 className="card-title font-bold">Job Details</h2>
+                            <hr />
                             <p><span className='font-bold'>Salary:</span>
                                 {job.salary}</p>
                             <p><span className='font-bold'>Job Title</span>
