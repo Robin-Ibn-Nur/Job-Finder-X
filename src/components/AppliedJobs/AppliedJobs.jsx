@@ -14,7 +14,7 @@ const AppliedJobs = () => {
 
     return (
         <div>
-            <h1 className='text-center font-semibold text-4xl my-10'>Details Page</h1>
+            <h1 className='text-center font-semibold text-4xl my-10'>Applied Jobs</h1>
             <div className='text-center font-bold'>
                 <label className='mr-5'>
                     <input
