@@ -7,7 +7,7 @@ const AppliedJobs = () => {
     const data = useLoaderData();
     const [isRemote, setIsRemote] = useState(false);
     const [isOnsite, setIsOnsite] = useState(false);
-
+    console.log(data);
     const jobs = isRemote || isOnsite
         ? data?.filter((job) => job.remote_or_onsite === (isRemote ? 'Remote' : 'Onsite'))
         : data;
